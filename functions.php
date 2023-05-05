@@ -8,9 +8,9 @@ $password = generateRandomString($length);
 
 $_SESSION['password'] = $password; // string
 
-/* if ($password) {
+if ($password) {
     header('Location: ' . "./show.php");
-} */
+}
 
 /* --- FUNCTION ------------------------------- */
 function composeCharactersList()
