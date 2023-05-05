@@ -5,12 +5,12 @@ session_start();
 $length = $_GET['length'];
 
 $password = generateRandomString($length);
-
+/* var_dump($password);
+ */
 $_SESSION['password'] = $password; // string
 
-if ($password) {
-    header('Location: ' . "./show.php");
-}
+
+header('Location: ' . "./show.php");
 
 /* --- FUNCTION ------------------------------- */
 function composeCharactersList()

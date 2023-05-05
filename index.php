@@ -1,5 +1,4 @@
 <?php
-include __DIR__ . "/functions.php"
 ?>
 
 <!DOCTYPE html>
@@ -20,7 +19,7 @@ include __DIR__ . "/functions.php"
         <h2 class="mt-3 text-center text-light"> Genera una password sicura </h2>
         <div id="form_card" class="card shadow col-3 mt-4 m-auto">
             <div class="card-body">
-                <form action="index.php" method="get">
+                <form action="functions.php" method="get">
 
                     <div class="input-group mb-3">
                         <div class="input-group-text">
@@ -74,7 +73,6 @@ include __DIR__ . "/functions.php"
         <div id="view_card" class="card shadow col-4 mt-4 m-auto">
             <div class="card-body text-center">
                 <h4>La password generata è:</h4>
-                <h3 class="text-danger"><?= $_SESSION["password"] ?></h3>
             </div>
             <!-- /#card-body -->
         </div>

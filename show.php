@@ -1,5 +1,6 @@
 <?php
-include __DIR__ . "/functions.php";
+session_start();
+
 var_dump($_SESSION);
 ?>
 
