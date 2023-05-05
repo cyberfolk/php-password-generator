@@ -1,5 +1,18 @@
 <?php
 
+session_start();
+
+$length = $_GET['length'];
+
+$password = generateRandomString($length);
+
+$_SESSION['password'] = $password; // string
+
+/* if ($password) {
+    header('Location: ' . "./show.php");
+} */
+
+/* --- FUNCTION ------------------------------- */
 function composeCharactersList()
 {
     //TODO IMPLEMENT LOGIC
@@ -27,7 +40,3 @@ function generateRandomString($length)
     }
     return $randomString;
 }
-
-$length = $_GET['length'];
-
-$randomString = generateRandomString($length);

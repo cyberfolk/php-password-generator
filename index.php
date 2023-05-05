@@ -74,7 +74,7 @@ include __DIR__ . "/functions.php"
         <div id="view_card" class="card shadow col-4 mt-4 m-auto">
             <div class="card-body text-center">
                 <h4>La password generata è:</h4>
-                <h3 class="text-danger"><?= $randomString ?></h3>
+                <h3 class="text-danger"><?= $_SESSION["password"] ?></h3>
             </div>
             <!-- /#card-body -->
         </div>

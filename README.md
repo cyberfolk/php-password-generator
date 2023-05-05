@@ -9,7 +9,7 @@ Creare un form che invii in GET la lunghezza della password.
 - Una nostra funzione userà questo dato per creare una password casuale (composta da lettere, lettere maiuscole, numeri e simboli) da restituire all’utente.
 - Scriviamo tutto (logica e layout) in un unico file index.php
 
-## :x: Milestone 2
+## :heavy_check_mark: Milestone 2
 
 Verificato il corretto funzionamento del nostro codice, spostiamo la logica in un file `functions.php` che includeremo poi nella pagina principale
 
