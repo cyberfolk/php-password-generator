@@ -26,7 +26,7 @@
                         <div class="input-group-text">
                             <label for="length">Lunghezza Password</label>
                         </div>
-                        <input type="number" name="length" id="length" min="3" max="10" class="form-control d-flex " placeholder="Insert number">
+                        <input type="number" name="length" id="length" min="3" max="20" class="form-control d-flex " placeholder="Insert number">
                     </div>
                     <!-- /.input-group #length -->
                     <div class="input-group mb-1">
@@ -58,11 +58,13 @@
                     </div>
                     <!-- /.input-group #upper_case -->
 
-                    <div class="form-check form-switch mb-3">
-                        <input class="form-check-input" type="checkbox" name="ripetition" role="switch" id="ripetition" checked>
-                        <label class="form-check-label" for="ripetition">Consenti ripetizione dei caratteri </label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-text">
+                            <input class="form-check-input mt-0" type="checkbox" name="allow_ripetition" id="allow_ripetition" checked>
+                        </div>
+                        <label for="allow_ripetition" class="form-control">Consenti ripetizione dei caratteri</label>
                     </div>
-                    <!-- /.form-switch #ripetition -->
+                    <!-- /.input-group #allow_ripetition -->
 
                     <button type="submit" class="btn btn-primary d-block m-auto">submit</button>
                 </form>
