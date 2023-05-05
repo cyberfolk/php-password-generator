@@ -69,14 +69,6 @@
             <!-- /#card-body -->
         </div>
         <!-- /#form_card -->
-
-        <div id="view_card" class="card shadow col-4 mt-4 m-auto">
-            <div class="card-body text-center">
-                <h4>La password generata è:</h4>
-            </div>
-            <!-- /#card-body -->
-        </div>
-        <!-- /#view_card -->
     </div>
     <!-- /.container -->
 </body>
