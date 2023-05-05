@@ -7,11 +7,11 @@ if (isset($_GET['length'])) {
     $down_case = $_GET['down_case'] ?? false;
     $upper_case = $_GET['upper_case'] ?? false;
     $symbols = $_GET['symbols'] ?? false;
-    $allow_ripetition = $_GET['allow_ripetition'] ?? false;
+    $avoid_ripetition = $_GET['avoid_ripetition'] ?? false;
 
-    $password = generateRandomString($length, $allow_ripetition);
+    $password = generateRandomString($length, $avoid_ripetition);
     $_SESSION['password'] = $password; // string
-    header('Location: ' . "./show.php");
+    //header('Location: ' . "./show.php");
 }
 
 /* --- FUNCTION ------------------------------- */
@@ -34,7 +34,7 @@ function composeCharactersList()
     return $charactersList;
 }
 
-function generateRandomString($length, $allow_ripetition)
+function generateRandomString($length, $avoid_ripetition)
 {
     $charactersList = composeCharactersList();
     $randomString = '';
@@ -43,8 +43,9 @@ function generateRandomString($length, $allow_ripetition)
         $randomIndex = rand(0, $maxIndex);
         $randomString .= $charactersList[$randomIndex];
 
-        if (!($allow_ripetition)) { // if false remove the value of randomIndex from charactersList - to avoid repetition
+        if (($avoid_ripetition)) { // if false remove the value of randomIndex from charactersList - to avoid repetition
             $charactersList = substr_replace($charactersList, '', $randomIndex, 1);
+            var_dump($charactersList);
         }
     }
     return $randomString;

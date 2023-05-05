@@ -60,11 +60,11 @@
 
                     <div class="input-group mb-3">
                         <div class="input-group-text">
-                            <input class="form-check-input mt-0" type="checkbox" name="allow_ripetition" id="allow_ripetition" checked>
+                            <input class="form-check-input mt-0" type="checkbox" name="avoid_ripetition" id="avoid_ripetition">
                         </div>
-                        <label for="allow_ripetition" class="form-control">Consenti ripetizione dei caratteri</label>
+                        <label for="avoid_ripetition" class="form-control">Evita ripetizione dei caratteri</label>
                     </div>
-                    <!-- /.input-group #allow_ripetition -->
+                    <!-- /.input-group #avoid_ripetition -->
 
                     <button type="submit" class="btn btn-primary d-block m-auto">submit</button>
                 </form>
