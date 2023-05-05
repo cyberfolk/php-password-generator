@@ -1,16 +1,18 @@
 <?php
 
 session_start();
+if (isset($_GET['length'])) {
+    $length = $_GET['length'];
+    $number = $_GET['number'] ?? true;
+    $down_case = $_GET['down_case'] ?? true;
+    $upper_case = $_GET['upper_case'] ?? true;
+    $symbols = $_GET['symbols'] ?? true;
+    $ripetition = $_GET['ripetition'] ?? true;
 
-$length = $_GET['length'];
-
-$password = generateRandomString($length);
-/* var_dump($password);
- */
-$_SESSION['password'] = $password; // string
-
-
-header('Location: ' . "./show.php");
+    $password = generateRandomString($length);
+    $_SESSION['password'] = $password; // string
+    //header('Location: ' . "./show.php");
+}
 
 /* --- FUNCTION ------------------------------- */
 function composeCharactersList()
@@ -24,9 +26,12 @@ function composeCharactersList()
             'upper_case' => 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
             'symbol' => "0123456789!@#$%^&*()",
         ];
-    foreach ($charactersType as $type) {
-        $charactersList .= $type;
+    foreach ($_GET as $key => $value) {
+        if ($value) {
+            $charactersList .= $charactersType[$key];
+        }
     }
+    var_dump($charactersList);
     return $charactersList;
 }
 

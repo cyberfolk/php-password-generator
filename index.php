@@ -1,4 +1,5 @@
 <?php
+//include __DIR__ . './functions.php';
 ?>
 
 <!DOCTYPE html>
@@ -30,35 +31,35 @@
                     <!-- /.input-group #length -->
                     <div class="input-group mb-1">
                         <div class="input-group-text">
-                            <input class="form-check-input mt-0" type="checkbox" name="symbols" id="symbols" value="">
+                            <input class="form-check-input mt-0" type="checkbox" name="symbols" id="symbols" checked>
                         </div>
                         <label for="symbols" class="form-control">Consenti Simboli</label>
                     </div>
                     <!-- /.input-group #symbols -->
                     <div class="input-group mb-1">
                         <div class="input-group-text">
-                            <input class="form-check-input mt-0" type="checkbox" name="number" id="number" value="">
+                            <input class="form-check-input mt-0" type="checkbox" name="number" id="number" checked>
                         </div>
                         <label for="number" class="form-control">Consenti Numeri</label>
                     </div>
                     <!-- /.input-group number -->
                     <div class="input-group mb-1">
                         <div class="input-group-text">
-                            <input class="form-check-input mt-0" type="checkbox" name="down_case" id="down_case" value="">
+                            <input class="form-check-input mt-0" type="checkbox" name="down_case" id="down_case" checked>
                         </div>
                         <label for="down_case" class="form-control">Consenti Lettere Minuscole</label>
                     </div>
                     <!-- /.input-group #down_case -->
                     <div class="input-group mb-3">
                         <div class="input-group-text">
-                            <input class="form-check-input mt-0" type="checkbox" name="upper_case" id="upper_case" value="">
+                            <input class="form-check-input mt-0" type="checkbox" name="upper_case" id="upper_case" checked>
                         </div>
                         <label for="upper_case" class="form-control">Consenti Lettere Maiuscole</label>
                     </div>
                     <!-- /.input-group #upper_case -->
 
                     <div class="form-check form-switch mb-3">
-                        <input class="form-check-input" type="checkbox" name="ripetition" role="switch" id="ripetition">
+                        <input class="form-check-input" type="checkbox" name="ripetition" role="switch" id="ripetition" checked>
                         <label class="form-check-label" for="ripetition">Consenti ripetizione dei caratteri </label>
                     </div>
                     <!-- /.form-switch #ripetition -->

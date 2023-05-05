@@ -13,7 +13,7 @@ Creare un form che invii in GET la lunghezza della password.
 
 Verificato il corretto funzionamento del nostro codice, spostiamo la logica in un file `functions.php` che includeremo poi nella pagina principale
 
-## :x: Milestone 3 (BONUS)
+## :heavy_check_mark: Milestone 3 (BONUS)
 
 Invece di visualizzare la password nella index, effettuare un `redirect` ad una pagina dedicata che tramite `$\_SESSION` recupererà la password da mostrare all’utente.
 
