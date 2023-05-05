@@ -2,7 +2,7 @@
 
 Dobbiamo creare una pagina che permetta ai nostri utenti di utilizzare il nostro generatore di password (abbastanza) sicure. L’esercizio è suddiviso in varie milestone ed è molto importante svilupparle in modo ordinato.
 
-## :x: Milestone 1
+## :heavy_check_mark: Milestone 1
 
 Creare un form che invii in GET la lunghezza della password.
 

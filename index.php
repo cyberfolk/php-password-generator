@@ -1,4 +1,35 @@
 <?php
+
+function composeCharactersList()
+{
+    //TODO IMPLEMENT LOGIC
+    $charactersList = "";
+    $charactersType =
+        [
+            'number' => '0123456789',
+            'down_case' => 'abcdefghijklmnopqrstuvwxyz',
+            'upper_case' => 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
+            'symbol' => "0123456789!@#$%^&*()",
+        ];
+    foreach ($charactersType as $type) {
+        $charactersList .= $type;
+    }
+    return $charactersList;
+}
+
+function generateRandomString($length)
+{
+    $characters = composeCharactersList();
+    $charactersLength = strlen($characters);
+    $randomString = '';
+    for ($i = 0; $i < $length; $i++) {
+        $randomString .= $characters[rand(0, $charactersLength - 1)];
+    }
+    return $randomString;
+}
+$length = $_GET['length'];
+$randomString = generateRandomString($length);
+
 ?>
 
 <!DOCTYPE html>
@@ -23,11 +54,11 @@
 
                     <div class="input-group mb-3">
                         <div class="input-group-text">
-                            <label for="len_pwd">Lunghezza Password</label>
+                            <label for="length">Lunghezza Password</label>
                         </div>
-                        <input type="number" name="len_pwd" id="len_pwd" min="3" max="10" class="form-control d-flex " placeholder="Insert number">
+                        <input type="number" name="length" id="length" min="3" max="10" class="form-control d-flex " placeholder="Insert number">
                     </div>
-                    <!-- /.input-group #len_pwd -->
+                    <!-- /.input-group #length -->
                     <div class="input-group mb-1">
                         <div class="input-group-text">
                             <input class="form-check-input mt-0" type="checkbox" name="symbols" id="symbols" value="">
@@ -69,6 +100,15 @@
             <!-- /#card-body -->
         </div>
         <!-- /#form_card -->
+
+        <div id="view_card" class="card shadow col-4 mt-4 m-auto">
+            <div class="card-body text-center">
+                <h4>La password generata è:</h4>
+                <h3 class="text-danger"><?= $randomString ?></h3>
+            </div>
+            <!-- /#card-body -->
+        </div>
+        <!-- /#view_card -->
     </div>
     <!-- /.container -->
 </body>
