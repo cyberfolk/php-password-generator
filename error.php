@@ -8,6 +8,7 @@ if ($_SESSION["errorCheckbox"]) {
 }
 ?>
 
+
 <!DOCTYPE html>
 <html lang="en">
 <?php include __DIR__ . "/assets/head.php" ?>
