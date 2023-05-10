@@ -26,10 +26,10 @@ include __DIR__ . '/assets/functions.php';
                         </div>
                         <!-- /.input-group #symbols -->
                         <div class="input-group mb-1">
-                            <div class="input-group-text"> <input class="form-check-input mt-0" type="checkbox" name="number" id="number" checked> </div>
-                            <label for="number" class="form-control">Consenti Numeri</label>
+                            <div class="input-group-text"> <input class="form-check-input mt-0" type="checkbox" name="numbers" id="numbers" checked> </div>
+                            <label for="numbers" class="form-control">Consenti Numeri</label>
                         </div>
-                        <!-- /.input-group number -->
+                        <!-- /.input-group numbers -->
                         <div class="input-group mb-1">
                             <div class="input-group-text"> <input class="form-check-input mt-0" type="checkbox" name="down_case" id="down_case" checked> </div>
                             <label for="down_case" class="form-control">Consenti Lettere Minuscole</label>
