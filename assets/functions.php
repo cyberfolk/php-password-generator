@@ -46,7 +46,7 @@ function composeCharList()
 {
     $charList = "";
     $charType =  [
-        'number' => '0123456789',
+        'numbers' => '0123456789',
         'down_case' => 'abcdefghijklmnopqrstuvwxyz',
         'upper_case' => 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
         'symbols' => "`~!@#$%^&*()_+-=[]{};\':\",./<>?'",
