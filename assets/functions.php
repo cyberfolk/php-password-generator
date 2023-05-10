@@ -36,7 +36,7 @@ function errorCheck()
     }
 
     // Set error if no checkbox is selected
-    if (empty($_GET["numbers"]) && empty($_GET["lowercase"]) && empty($_GET["uppercase"]) && empty($_GET["symbols"])) {
+    if (empty($_GET["char_type_box"])) {
         $_SESSION["error"] = true;
         $_SESSION["errorCheckbox"] = true;
     }
@@ -52,10 +52,8 @@ function composeCharList()
         'symbols' => "`~!@#$%^&*()_+-=[]{};\':\",./<>?'",
 
     ];
-    foreach ($_GET as $key => $value) {
-        if ($value) { // value of input is true
-            $charList .= $charType[$key]; // charList gain a value of charType corresponding at key. if that value is null add nothing
-        }
+    foreach ($_GET["char_type_box"] as $char_checked) {
+        $charList .= $charType[$char_checked]; // the multiple checkbox array contains only the values of checkboxes set true
     }
     return $charList;
 }
