@@ -1,25 +1,18 @@
 # Descrizione
 
-Dobbiamo creare una pagina che permetta ai nostri utenti di utilizzare il nostro generatore di password (abbastanza) sicure. L’esercizio è suddiviso in varie milestone ed è molto importante svilupparle in modo ordinato.
+Interfaccia utente capace di genera una stringa di caratteri casuali, è possibile selezionare alcuni parametri desiderati come la lunghezza della stringa, l'insieme dei caratteri di partenza e la possibilità di inserire caratteri ripetuti.
 
-## :heavy_check_mark: Milestone 1
+<div>
+  <img src="./assets/img/screencapture-1.png" width="32%" style="margin: 4px;"/>
+  <img src="./assets/img/screencapture-2.png" width="32%" style="margin: 4px;"/>
+  <img src="./assets/img/screencapture-3.png" width="32%" style="margin: 4px;"/>
+</div>
 
-Creare un form che invii in GET la lunghezza della password.
+## Milestone
 
-- Una nostra funzione userà questo dato per creare una password casuale (composta da lettere, lettere maiuscole, numeri e simboli) da restituire all’utente.
-- Scriviamo tutto (logica e layout) in un unico file index.php
-
-## :heavy_check_mark: Milestone 2
-
-Verificato il corretto funzionamento del nostro codice, spostiamo la logica in un file `functions.php` che includeremo poi nella pagina principale
-
-## :heavy_check_mark: Milestone 3 (BONUS)
-
-Invece di visualizzare la password nella index, effettuare un `redirect` ad una pagina dedicata che tramite `$\_SESSION` recupererà la password da mostrare all’utente.
-
-## :heavy_check_mark: Milestone 4 (BONUS)
-
-Gestire ulteriori parametri per la password:
-
-- Quali caratteri usare fra numeri, lettere e simboli. Possono essere scelti singolarmente (es. solo numeri) oppure possono essere combinati fra loro (es. numeri e simboli, oppure tutti e tre insieme).
-- Dare all’utente anche la possibilità di permettere o meno la ripetizione di caratteri uguali.
+-   Ho creato un form che invii in GET la lunghezza della password.
+-   Ho creatp una funzione iniziale che usando questo unico dato generava una password casuale (composta da lettere, lettere maiuscole, numeri e simboli).
+-   Inizialmente ho scrittto tutto il codice (logica e layout) in un unico file `index.php`, successivamente una volta verificato il corretto funzionamento, ho spostato spostiamo la logica in un file `functions.php` che ho incluso nella pagina principale.
+-   Invece di visualizzare la password nella index, ho effettuato un `redirect` ad una pagina dedicata che tramite `$\_SESSION` recupererà la password da mostrare all’utente.
+-   Ho aggiunto la possibilità di generare la password scegliendo una combinazione a piacere tra questi set di caratteri: numeri, lettere e simboli.
+-   Ho aggiunto la possibilità di generare password che evitino la ripetizione di caratteri uguali.

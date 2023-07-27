@@ -12,7 +12,7 @@ if ($_SESSION["errorCheckbox"]) {
 <html lang="en">
 <?php include __DIR__ . "/assets/head.php" ?>
 
-<body class="bg-primary">
+<body>
     <?php include __DIR__ . "/assets/header.php" ?>
 
     <main id="app_main">
