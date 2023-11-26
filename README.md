@@ -1,18 +1,22 @@
-# Descrizione
+# Password Generator
 
-Interfaccia utente capace di genera una stringa di caratteri casuali, è possibile selezionare alcuni parametri desiderati come la lunghezza della stringa, l'insieme dei caratteri di partenza e la possibilità di inserire caratteri ripetuti.
+**Initial commit:** 05/05/23
+
+**Technologies**: PHP, Blade, HTML, CSS e Bootstrap.
+
+**Info**: :mag_right: A user interface able to generate a random string, it is possible to select some desired parameters such as the length of the string, the set of starting characters, and the possibility of inserting repeated characters.
 
 <div>
-  <img src="./assets/img/screencapture-1.png" width="32%" style="margin: 4px;"/>
-  <img src="./assets/img/screencapture-2.png" width="32%" style="margin: 4px;"/>
-  <img src="./assets/img/screencapture-3.png" width="32%" style="margin: 4px;"/>
+  <img src="./assets/img/screencapture-1.png" width="30%" style="margin: 4px;"/>
+  <img src="./assets/img/screencapture-2.png" width="30%" style="margin: 4px;"/>
+  <img src="./assets/img/screencapture-3.png" width="30%" style="margin: 4px;"/>
 </div>
 
 ## Milestone
 
--   Ho creato un form che invii in GET la lunghezza della password.
--   Ho creatp una funzione iniziale che usando questo unico dato generava una password casuale (composta da lettere, lettere maiuscole, numeri e simboli).
--   Inizialmente ho scrittto tutto il codice (logica e layout) in un unico file `index.php`, successivamente una volta verificato il corretto funzionamento, ho spostato spostiamo la logica in un file `functions.php` che ho incluso nella pagina principale.
--   Invece di visualizzare la password nella index, ho effettuato un `redirect` ad una pagina dedicata che tramite `$\_SESSION` recupererà la password da mostrare all’utente.
--   Ho aggiunto la possibilità di generare la password scegliendo una combinazione a piacere tra questi set di caratteri: numeri, lettere e simboli.
--   Ho aggiunto la possibilità di generare password che evitino la ripetizione di caratteri uguali.
+- I created a form that sends the password length in a GET request.
+- I created an initial function that using this single data generated a random password (composed of letters, capital letters, numbers, and symbols).
+- Initially, I wrote all the code (logic and layout) in a single `index.php` file, subsequently, once I verified the correct functioning, I moved the logic to a `functions.php` file that I included on the main page.
+- Instead of displaying the password in the index, I performed a `redirect` on a dedicated page which via `$\_SESSION` will retrieve the password to show to the user.
+- I added the possibility of generating the password by choosing any combination of these character sets: numbers, letters, and symbols.
+- I added the possibility of generating passwords which avoids the repetition of the same characters.
